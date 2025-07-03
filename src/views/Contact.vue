@@ -449,8 +449,7 @@ const handleSubmit = async () => {
     await emailjs.send(
       SERVICE_ID,
       TEMPLATE_ID,
-      templateParams,
-      PUBLIC_KEY
+      templateParams
     )
 
     formSubmitted.value = true
