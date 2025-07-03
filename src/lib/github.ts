@@ -24,8 +24,8 @@ export interface GitHubApiResponse {
 }
 
 const GITHUB_API_BASE = 'https://api.github.com'
-const USERNAME = 'Derric01'
-const MAX_PAGES = 3 // Fetch up to 3 pages (300 repos max)
+const USERNAME = import.meta.env.VITE_GITHUB_USERNAME || 'Derric01'
+const MAX_PAGES = Number(import.meta.env.VITE_MAX_REPOS_PAGES || 3) // Fetch up to 3 pages (300 repos max)
 
 /**
  * Fetch public repositories for a GitHub user
