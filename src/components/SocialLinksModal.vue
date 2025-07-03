@@ -66,8 +66,6 @@ const props = defineProps({
 
 const emit = defineEmits(['close'])
 
-console.log('SocialLinksModal.vue isOpen:', props.isOpen)
-
 const socialLinks = [
   {
     name: 'GitHub',
@@ -96,7 +94,6 @@ const socialLinks = [
 ]
 
 const closeModal = () => {
-  console.log('Closing modal')
   emit('close')
 }
 </script>

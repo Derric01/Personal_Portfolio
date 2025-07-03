@@ -7,7 +7,7 @@
         class="absolute inset-0 bg-gradient-to-br from-background via-background/50 to-background/30"
       ></div>
 
-      <!-- Floating Orbs - Enhanced with more vibrant colors and additional orbs -->
+      <!-- Enhanced Floating Orbs with more vibrant colors and glow effects -->
       <div
         class="absolute top-1/4 left-1/4 w-32 h-32 bg-primary/30 rounded-full blur-xl animate-float-slow"
       ></div>
@@ -23,11 +23,23 @@
       <div
         class="absolute bottom-1/4 left-1/3 w-16 h-16 bg-green-500/30 rounded-full blur-xl animate-float-fast"
       ></div>
+      
+      <!-- New Animated Orbs -->
+      <div
+        class="absolute top-2/3 left-1/5 w-36 h-36 bg-pink-500/20 rounded-full blur-2xl animate-pulse-glow"
+      ></div>
+      <div
+        class="absolute bottom-1/3 right-1/5 w-40 h-40 bg-indigo-500/15 rounded-full blur-2xl animate-float-medium"
+      ></div>
+      <div
+        class="absolute top-1/4 right-1/4 w-24 h-24 bg-teal-500/20 rounded-full blur-xl animate-pulse-glow"
+        style="animation-delay: 1s;"
+      ></div>
 
-      <!-- Grid Pattern - More visible -->
+      <!-- Enhanced Grid Pattern -->
       <div class="absolute inset-0 bg-grid-pattern opacity-10"></div>
 
-      <!-- Particles - Added more and with different colors -->
+      <!-- Enhanced Particles with more variety and effects -->
       <div class="particles">
         <div class="particle" style="--delay: 0s; --duration: 8s; --x: 20%; --y: 80%"></div>
         <div class="particle" style="--delay: 2s; --duration: 10s; --x: 80%; --y: 20%"></div>
@@ -46,7 +58,28 @@
           class="particle particle-purple"
           style="--delay: 3.5s; --duration: 9.5s; --x: 40%; --y: 50%"
         ></div>
+        
+        <!-- New Particle Types and Variations -->
+        <div
+          class="particle particle-gold"
+          style="--delay: 0.5s; --duration: 9s; --x: 25%; --y: 65%"
+        ></div>
+        <div
+          class="particle particle-teal"
+          style="--delay: 3s; --duration: 8s; --x: 85%; --y: 25%"
+        ></div>
+        <div
+          class="particle particle-pink large-particle"
+          style="--delay: 2s; --duration: 12s; --x: 65%; --y: 15%"
+        ></div>
+        <div
+          class="particle particle-indigo tiny-particle"
+          style="--delay: 1s; --duration: 6s; --x: 15%; --y: 85%"
+        ></div>
       </div>
+      
+      <!-- New Cosmic Elements -->
+      <div class="cosmic-dots"></div>
     </div>
 
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -56,8 +89,11 @@
           <!-- Profile Image - Enhanced with more vibrant glow and tech icons -->
           <div class="flex justify-center">
             <div class="relative group">
+              <!-- Rotating Orbit Ring -->
+              <div class="absolute inset-0 rounded-full border-2 border-dashed border-accent/20 animate-rotate-slow"></div>
+              
               <div
-                class="absolute -inset-4 bg-gradient-to-r from-primary via-accent to-purple-500 rounded-full blur opacity-30 group-hover:opacity-70 animate-pulse transition duration-1000"
+                class="absolute -inset-4 bg-gradient-to-r from-primary via-accent to-purple-500 rounded-full blur opacity-30 group-hover:opacity-70 animate-pulse-glow transition duration-1000"
               ></div>
               <!-- Connect Button Indicator -->
               <div
@@ -79,7 +115,7 @@
                   class="w-full h-full rounded-full bg-gradient-to-br from-background to-background/80 flex items-center justify-center backdrop-blur-sm"
                 >
                   <span
-                    class="text-5xl sm:text-6xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent animate-text-shimmer"
+                    class="text-5xl sm:text-6xl font-bold bg-gradient-to-br from-primary to-accent bg-clip-text text-transparent animate-shimmer"
                     >DS</span
                   >
                 </div>
@@ -95,48 +131,67 @@
                 class="absolute -bottom-2 -right-2 w-10 h-10 bg-gradient-to-r from-green-400 to-green-500 rounded-full border-4 border-background animate-pulse shadow-lg"
               ></div>
 
-              <!-- Floating Tech Icons - Enhanced with more tech-related icons -->
+              <!-- Floating Tech Icons - Enhanced with more tech-related icons and animations -->
               <div
-                class="absolute -top-8 -left-8 w-8 h-8 bg-blue-500/30 rounded-lg animate-float-slow opacity-80"
+                class="absolute -top-8 -left-8 w-8 h-8 bg-blue-500/30 rounded-lg animate-float-slow opacity-80 hover:scale-125 transition-transform"
               >
                 <div class="w-full h-full flex items-center justify-center text-blue-400">⚡</div>
               </div>
               <div
-                class="absolute -top-6 -right-10 w-6 h-6 bg-purple-500/30 rounded-lg animate-float-medium opacity-80"
+                class="absolute -top-6 -right-10 w-6 h-6 bg-purple-500/30 rounded-lg animate-float-medium opacity-80 hover:scale-125 transition-transform"
               >
                 <div class="w-full h-full flex items-center justify-center text-purple-400">💎</div>
               </div>
               <div
-                class="absolute -bottom-8 -left-6 w-7 h-7 bg-orange-500/30 rounded-lg animate-float-fast opacity-80"
+                class="absolute -bottom-8 -left-6 w-7 h-7 bg-orange-500/30 rounded-lg animate-float-fast opacity-80 hover:scale-125 transition-transform"
               >
                 <div class="w-full h-full flex items-center justify-center text-orange-400">🚀</div>
               </div>
               <div
-                class="absolute top-10 -left-12 w-7 h-7 bg-green-500/30 rounded-lg animate-float-medium opacity-80"
+                class="absolute top-10 -left-12 w-7 h-7 bg-green-500/30 rounded-lg animate-float-medium opacity-80 hover:scale-125 transition-transform"
               >
                 <div class="w-full h-full flex items-center justify-center text-green-400">🌐</div>
               </div>
               <div
-                class="absolute top-10 -right-12 w-7 h-7 bg-red-500/30 rounded-lg animate-float-fast opacity-80"
+                class="absolute top-10 -right-12 w-7 h-7 bg-red-500/30 rounded-lg animate-float-fast opacity-80 hover:scale-125 transition-transform"
               >
                 <div class="w-full h-full flex items-center justify-center text-red-400">🔥</div>
               </div>
               <div
-                class="absolute -bottom-10 right-6 w-6 h-6 bg-yellow-500/30 rounded-lg animate-float-slow opacity-80"
+                class="absolute -bottom-10 right-6 w-6 h-6 bg-yellow-500/30 rounded-lg animate-float-slow opacity-80 hover:scale-125 transition-transform"
               >
                 <div class="w-full h-full flex items-center justify-center text-yellow-400">⭐</div>
+              </div>
+              
+              <!-- New animated tech icons -->
+              <div
+                class="absolute top-4 -right-16 w-7 h-7 bg-teal-500/30 rounded-lg animate-float-horizontal opacity-80 hover:scale-125 transition-transform"
+              >
+                <div class="w-full h-full flex items-center justify-center text-teal-400">📱</div>
+              </div>
+              <div
+                class="absolute -bottom-6 -right-14 w-7 h-7 bg-pink-500/30 rounded-lg animate-float-medium opacity-80 hover:scale-125 transition-transform"
+              >
+                <div class="w-full h-full flex items-center justify-center text-pink-400">🎨</div>
+              </div>
+              <div
+                class="absolute -top-14 left-0 w-7 h-7 bg-indigo-500/30 rounded-lg animate-float-horizontal opacity-80 hover:scale-125 transition-transform"
+              >
+                <div class="w-full h-full flex items-center justify-center text-indigo-400">👨‍💻</div>
               </div>
             </div>
           </div>
 
-          <!-- Name and Title - Enhanced with more vibrant gradients -->
+          <!-- Name and Title - Enhanced with more vibrant gradients and animations -->
           <div class="space-y-4">
-            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight slide-up">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight slide-up relative">
               <span
                 class="bg-gradient-to-r from-primary via-purple-500 to-accent bg-[length:200%_100%] bg-clip-text text-transparent animate-gradient-x"
               >
                 Derric Samson
               </span>
+              <!-- Animated Hand Wave -->
+              <span class="inline-block animate-wave origin-bottom-right ml-2">👋</span>
             </h1>
             <div class="relative inline-block">
               <p
@@ -144,9 +199,33 @@
               >
                 Full-Stack Developer
               </p>
+              <!-- Animated Underline Effect -->
+              <div class="w-0 h-0.5 bg-gradient-to-r from-primary to-accent absolute bottom-0 left-0 typing-cursor"></div>
               <div
-                class="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg blur-sm animate-pulse"
+                class="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg blur-sm animate-pulse-glow"
               ></div>
+            </div>
+            
+            <!-- New Animated Tech Stack Section -->
+            <div class="mt-6 flex flex-wrap justify-center items-center gap-3 animate-fade-in-staggered">
+              <div class="tech-badge">
+                <span>Vue.js</span>
+              </div>
+              <div class="tech-badge">
+                <span>TypeScript</span>
+              </div>
+              <div class="tech-badge">
+                <span>Tailwind</span>
+              </div>
+              <div class="tech-badge">
+                <span>Node.js</span>
+              </div>
+              <div class="tech-badge">
+                <span>MongoDB</span>
+              </div>
+              <div class="tech-badge">
+                <span>React</span>
+              </div>
             </div>
             <p
               class="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed fade-in-up opacity-80"
@@ -358,12 +437,8 @@ import { fetchAllRepos, getLanguageColor } from '@/lib/github'
 // State variables
 const showSocialModal = ref(false)
 
-// Debug the modal state
-console.log('Home component loaded, showSocialModal initialized as:', showSocialModal.value)
-
 function toggleSocialModal() {
   showSocialModal.value = !showSocialModal.value
-  console.log('toggleSocialModal called, showSocialModal is now:', showSocialModal.value)
 }
 
 const repoCount = ref(15)
@@ -759,5 +834,103 @@ onMounted(async () => {
 
 .particle-purple {
   background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+/* New particle styles */
+.particle-gold {
+  background: linear-gradient(45deg, #f7971e, #ffd200);
+}
+
+.particle-teal {
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+}
+
+.particle-pink {
+  background: linear-gradient(45deg, #ec008c, #fc6767);
+}
+
+.particle-indigo {
+  background: linear-gradient(45deg, #4776E6, #8E54E9);
+}
+
+.large-particle {
+  width: 8px;
+  height: 8px;
+}
+
+.tiny-particle {
+  width: 3px;
+  height: 3px;
+}
+
+/* Tech badges animation */
+.tech-badge {
+  padding: 0.35rem 0.8rem;
+  border-radius: 9999px;
+  background-color: rgba(var(--accent-rgb), 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(var(--accent-rgb), 0.2);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  animation: badge-pulse 3s infinite;
+  animation-delay: calc(var(--index, 0) * 0.1s);
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+.tech-badge:hover {
+  background-color: rgba(var(--accent-rgb), 0.2);
+  transform: translateY(-2px);
+}
+
+.tech-badge:nth-child(1) { --index: 1; animation-delay: 0.1s; }
+.tech-badge:nth-child(2) { --index: 2; animation-delay: 0.2s; }
+.tech-badge:nth-child(3) { --index: 3; animation-delay: 0.3s; }
+.tech-badge:nth-child(4) { --index: 4; animation-delay: 0.4s; }
+.tech-badge:nth-child(5) { --index: 5; animation-delay: 0.5s; }
+.tech-badge:nth-child(6) { --index: 6; animation-delay: 0.6s; }
+
+@keyframes badge-pulse {
+  0% { transform: translateY(20px); opacity: 0; }
+  20% { transform: translateY(0); opacity: 1; }
+  90% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Typing cursor animation */
+.typing-cursor {
+  animation: typing-width 2.5s steps(30, end) forwards 0.5s, blink 1s infinite 3s;
+}
+
+@keyframes typing-width {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Cosmic dots background */
+.cosmic-dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 2px 2px, rgba(255, 255, 255, 0.15) 1px, transparent 0);
+  background-size: 50px 50px;
+  animation: cosmic-rotate 120s linear infinite;
+}
+
+@keyframes cosmic-rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Text shimmer animation */
+.animate-shimmer {
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 </style>

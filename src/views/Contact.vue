@@ -440,12 +440,6 @@ const handleSubmit = async () => {
       message: form.message,
     }
     
-    console.log('Sending email with params:', {
-      serviceID: SERVICE_ID,
-      templateID: TEMPLATE_ID,
-      params: templateParams,
-    })
-    
     await emailjs.send(
       SERVICE_ID,
       TEMPLATE_ID,
