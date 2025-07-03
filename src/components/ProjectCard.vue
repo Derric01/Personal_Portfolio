@@ -1,6 +1,7 @@
 <template>
   <Card
-    class="group hover-scale hover:shadow-lg transition-all duration-300 overflow-hidden h-full"
+    class="group hover-scale hover:shadow-lg transition-all duration-300 overflow-hidden h-full cursor-pointer hover:border-primary"
+    @click="navigateToRepo"
   >
     <!-- Repository Image -->
     <div class="relative h-48 overflow-hidden">
@@ -24,6 +25,17 @@
           class="px-2 py-1 text-xs font-medium bg-yellow-500/80 text-yellow-900 backdrop-blur-sm rounded-full"
         >
           Archived
+        </span>
+      </div>
+      <!-- Click indicator that appears on hover -->
+      <div
+        class="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+      >
+        <span
+          class="px-2 py-1 text-xs font-medium bg-primary/80 text-primary-foreground backdrop-blur-sm rounded-full flex items-center gap-1"
+        >
+          <ExternalLink class="w-3 h-3" />
+          Click to view
         </span>
       </div>
     </div>
@@ -148,6 +160,11 @@ const onImageError = () => {
   imageError.value = true
 }
 
+// Function to navigate to repository URL
+const navigateToRepo = () => {
+  window.open(props.repo.html_url, '_blank', 'noopener,noreferrer')
+}
+
 // Language colors (simplified set)
 const languageColors: Record<string, string> = {
   JavaScript: '#f1e05a',
@@ -178,6 +195,7 @@ const getLanguageColor = (language: string): string => {
 .line-clamp-2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
