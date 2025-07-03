@@ -365,7 +365,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 import emailjs from '@emailjs/browser'
 import {
   Send,
@@ -409,21 +409,47 @@ const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
+// Initialize EmailJS
+onMounted(() => {
+  emailjs.init(PUBLIC_KEY)
+})
+
 // Form submission handler
 const handleSubmit = async () => {
+  // Basic form validation
+  if (!form.name || !form.email || !form.subject || !form.message) {
+    formError.value = 'Please fill in all fields'
+    return
+  }
+  
+  // Email format validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!emailRegex.test(form.email)) {
+    formError.value = 'Please enter a valid email address'
+    return
+  }
+
   formSubmitting.value = true
   formError.value = ''
 
   try {
+    const templateParams = {
+      from_name: form.name,
+      from_email: form.email,
+      subject: form.subject,
+      message: form.message,
+    }
+    
+    console.log('Sending email with params:', {
+      serviceID: SERVICE_ID,
+      templateID: TEMPLATE_ID,
+      params: templateParams,
+    })
+    
     await emailjs.send(
       SERVICE_ID,
       TEMPLATE_ID,
-      {
-        from_name: form.name,
-        from_email: form.email,
-        subject: form.subject,
-        message: form.message,
-      },
+      templateParams,
       PUBLIC_KEY
     )
 
@@ -433,6 +459,7 @@ const handleSubmit = async () => {
     form.subject = ''
     form.message = ''
   } catch (error: any) {
+    console.error('EmailJS error:', error)
     formError.value = error?.text || 'There was an error sending your message. Please try again.'
   } finally {
     formSubmitting.value = false
